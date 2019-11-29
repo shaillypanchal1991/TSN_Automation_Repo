@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="85032" started-at="2019-11-29T19:41:06Z" finished-at="2019-11-29T19:42:31Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="85032" started-at="2019-11-29T19:41:06Z" finished-at="2019-11-29T19:42:31Z">
+      <class name="org.tsn.test.IOSAutomation">
+        <test-method status="PASS" signature="extentSetup()[pri:0, instance:org.tsn.test.IOSAutomation@78e4deb0]" name="extentSetup" is-config="true" duration-ms="170" started-at="2019-11-29T19:41:06Z" finished-at="2019-11-29T19:41:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extentSetup -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:org.tsn.test.IOSAutomation@78e4deb0]" name="setup" is-config="true" duration-ms="28090" started-at="2019-11-29T19:41:06Z" finished-at="2019-11-29T19:41:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="TSN_iOS_Automation_Suite()[pri:1, instance:org.tsn.test.IOSAutomation@78e4deb0]" name="TSN_iOS_Automation_Suite" duration-ms="55628" started-at="2019-11-29T19:41:34Z" finished-at="2019-11-29T19:42:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TSN_iOS_Automation_Suite -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:org.tsn.test.IOSAutomation@78e4deb0]" name="tearDown" is-config="true" duration-ms="1121" started-at="2019-11-29T19:42:30Z" finished-at="2019-11-29T19:42:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TSN_iOS_Automation_Suite status=SUCCESS method=IOSAutomation.TSN_iOS_Automation_Suite()[pri:1, instance:org.tsn.test.IOSAutomation@78e4deb0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="extentFlush()[pri:0, instance:org.tsn.test.IOSAutomation@78e4deb0]" name="extentFlush" is-config="true" duration-ms="527" started-at="2019-11-29T19:42:31Z" finished-at="2019-11-29T19:42:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extentFlush -->
+      </class> <!-- org.tsn.test.IOSAutomation -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

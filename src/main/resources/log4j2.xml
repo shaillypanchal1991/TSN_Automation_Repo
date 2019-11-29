@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="warn">
+    <Properties>
+        <Property name="basePath">log</Property>
+    </Properties>
+ 
+    <Appenders>
+    
+	<RollingFile name="fileLoggerHtml" fileName="${basePath}/app-info-html.html"
+                     filePattern="${basePath}/app-info-html-%d{yyyy-MM-dd}.html">
+            <HTMLLayout charset="UTF-8" title="Android TV Logs" locationInfo="true" />
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true" />
+                <SizeBasedTriggeringPolicy size="100 MB" />
+            </Policies>
+        </RollingFile>    
+    
+    
+        <RollingFile name="fileLogger" fileName="${basePath}/app-info.log" filePattern="${basePath}/app-info-%d{yyyy-MM-dd}.log">
+            <PatternLayout>
+                <pattern>[%-5level] %d{: yyyy-MM-dd : HH-mm-ss.SSS :} [%t] %c{1} - %msg%n</pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true" />
+                <SizeBasedTriggeringPolicy size="100 MB" />
+            </Policies>
+        </RollingFile>
+ 
+        <Console name="console" target="SYSTEM_OUT">
+            <PatternLayout   pattern="[%-5level] %d{yyyy-MM-dd H-mm-ss.SSS} [%t] %c{1} - %msg%n" />
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Logger name="com.atv.tests" level="debug" additivity="true">
+            <appender-ref ref="fileLogger" level="debug" />
+            <appender-ref ref="fileLoggerHtml" level="debug" />
+        </Logger>
+        <Root level="debug" additivity="false">
+            <appender-ref ref="console" />
+            
+        </Root>
+    </Loggers>
+</Configuration>
